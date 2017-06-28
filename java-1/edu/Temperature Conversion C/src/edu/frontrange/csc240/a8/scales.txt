@@ -1,0 +1,8 @@
+# Relative order, name, absolute zero in this scale, nominal boiling point in this scale
+2, Celsius,        -273.1500,   100.0000
+0, Fahrenheit,     -459.6700,   212.0000
+5, Kelvin,            0.0000,   373.1500
+5, Rankine,           0.0000,   671.6700
+25, Newton,         -90.1395,    33.0000
+14, Delisle,        559.7250,    90.0000
+30, R\u00E9aumur,  -218.5200,    80.0000

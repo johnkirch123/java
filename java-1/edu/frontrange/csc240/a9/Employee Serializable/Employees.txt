@@ -1,0 +1,6 @@
+Name                Hire Date           Birth Date          
+Smith, Bob       Hired: 3/10/2012     Birthday: 12/13/1995
+Jones, Sally     Hired: 4/17/2013     Birthday: 5/3/1978
+Brown, Jackie    Hired: 7/2/2006      Birthday: 7/22/1982
+James, Billy     Hired: 11/1/2001     Birthday: 3/31/1958
+Queen, Suzie     Hired: 10/10/2016    Birthday: 1/12/1999

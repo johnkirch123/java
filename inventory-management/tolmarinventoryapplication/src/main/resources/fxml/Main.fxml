@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="825.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tolmar.inventory.app.tolmarinventoryapplication.MainController">
+   <children>
+      <VBox layoutY="27.0" prefHeight="800.0" prefWidth="1200.0">
+         <children>
+            <HBox prefHeight="61.0" prefWidth="1200.0">
+               <children>
+                  <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/images/TolmarSymbol.jpg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="45.0" fitWidth="235.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/images/TolmarInventory.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox fx:id="adminPane" prefWidth="1200.0" spacing="10.0">
+               <children>
+                  <ComboBox fx:id="departmentCB" prefWidth="150.0" promptText="Department" />
+                  <TextField fx:id="equipIDFilterField" promptText="Filter: Equipment ID" />
+                  <ComboBox fx:id="searchCB" prefWidth="150.0" />
+                  <TextField fx:id="filterField" prefHeight="25.0" prefWidth="670.0" promptText="Filter: Description" />
+               </children>
+               <padding>
+                  <Insets left="30.0" right="30.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Separator prefHeight="22.0" prefWidth="1200.0" />
+            <TabPane fx:id="tabs" prefHeight="685.0" prefWidth="1200.0" tabClosingPolicy="ALL_TABS" tabMaxWidth="200.0">
+              <tabs>
+                <Tab fx:id="resultsTab" text="Search Results">
+                     <content>
+                        <VBox fx:id="element">
+                           <children>
+                              <TableView fx:id="tableView" minHeight="523.0" prefHeight="644.0" prefWidth="1200.0">
+                                <columns>
+                                    <TableColumn fx:id="idCol" prefWidth="50.0" text="List" />
+                                    <TableColumn fx:id="imgCol" prefWidth="130.0" text="Image" />
+                                    <TableColumn fx:id="pnCol" prefWidth="110.0" text="PN" />
+                                    <TableColumn fx:id="descCol" prefWidth="455.0" text="Description" />
+                                    <TableColumn fx:id="quantityCol" prefWidth="85.0" text="On Hand" />
+                                  <TableColumn fx:id="venCol" prefWidth="100.0" text="Vendor" />
+                                    <TableColumn fx:id="mnCol" prefWidth="130.0" text="Model Number" />
+                                    <TableColumn fx:id="equipmentIDCol" prefWidth="120.0" text="Equipment ID" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </VBox>
+                     </content>
+                  </Tab>
+                  
+                    </tabs>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TabPane>
+            <HBox prefHeight="32.0" prefWidth="1200.0">
+               <children>
+                  <HBox prefHeight="26.0" prefWidth="223.0">
+                     <children>
+                        <Label minWidth="80.0" prefHeight="26.0" prefWidth="96.0" text="Signed in as: ">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding></Label>
+                        <Label fx:id="userLbl" prefHeight="26.0" prefWidth="98.0" />
+                     </children>
+                  </HBox>
+                  <Separator prefHeight="17.0" prefWidth="800.0" />
+                  <HBox prefHeight="26.0" prefWidth="179.0">
+                     <children>
+                        <Label fx:id="dateLbl" minWidth="28.0" prefHeight="26.0" prefWidth="150.0">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="timeLbl" prefHeight="26.0" prefWidth="142.0">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <MenuBar fx:id="menuBar" prefHeight="25.0" prefWidth="1200.0">
+        <menus>
+          <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="newSearchMenuItem" mnemonicParsing="false" onAction="#searchButtonClicked" text="New Search" />
+              <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#closeProgram" text="Close" />
+            </items>
+          </Menu>
+          <Menu fx:id="partsMenu" mnemonicParsing="false" text="Parts">
+            <items>
+                  <MenuItem fx:id="addMenuItem" mnemonicParsing="false" onAction="#addItemButtonClicked" text="New" />
+                  <MenuItem fx:id="editMenuItem" mnemonicParsing="false" onAction="#editItemButtonClicked" text="Edit" />
+              <MenuItem fx:id="deleteMenuItem" mnemonicParsing="false" onAction="#deleteItemButtonClicked" text="Delete" />
+            </items>
+          </Menu>
+            <Menu fx:id="usersMenu" mnemonicParsing="false" text="Users">
+              <items>
+                <MenuItem fx:id="userMenuItem" mnemonicParsing="false" onAction="#userWindow" text="Users" />
+                  <MenuItem fx:id="userHistoryMenuItem" mnemonicParsing="false" onAction="#userHistoryMenuItemClicked" text="User History" />
+              </items>
+            </Menu>
+            <Menu fx:id="imageMenu" mnemonicParsing="false" text="Image Management">
+              <items>
+                  <MenuItem fx:id="imageLocationMenuItem" mnemonicParsing="false" onAction="#imageLocationMenuItemClicked" text="Image Location" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

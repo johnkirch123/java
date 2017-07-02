@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="610.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tolmar.inventory.app.tolmarinventoryapplication.UsersController">
+   <children>
+     <TableView fx:id="userTable" prefHeight="610.0" prefWidth="1200.0">
+                                <columns>
+                                    <TableColumn fx:id="iCol" prefWidth="41.0" text="List" />
+                                  <TableColumn fx:id="fnCol" prefWidth="149.0" text="First Name" />
+                                  <TableColumn fx:id="lnCol" prefWidth="165.0" text="Last Name" />
+                                    <TableColumn fx:id="unCol" prefWidth="192.0" text="Username" />
+                                    <TableColumn fx:id="pCol" prefWidth="191.0" text="Password" />
+                                    <TableColumn fx:id="emCol" prefWidth="310.0" text="Email" />
+                                    <TableColumn fx:id="aCol" prefWidth="151.0" text="Admin Rights" />
+                                </columns>
+     </TableView>
+                              <HBox layoutX="48.0" layoutY="610.0" spacing="10.0">
+                                 <children>
+                                    <TextField fx:id="fn" promptText="First Name" />
+                                    <TextField fx:id="ln" promptText="Last Name" />
+                                    <TextField fx:id="un" promptText="Username" />
+                                    <TextField fx:id="p" promptText="Password" />
+                                    <TextField fx:id="em" promptText="Email" />
+            						<ChoiceBox fx:id="a" prefWidth="150.0" />
+                                    <Button fx:id="addButton" minWidth="60.0" mnemonicParsing="false" onAction="#addButtonClicked" text="Add" />
+                                    <Button fx:id="removeButton" minWidth="60.0" mnemonicParsing="false" onAction="#removeButtonClicked" text="Remove" />
+            <CheckBox fx:id="passwordCB" mnemonicParsing="false" onAction="#hideUserInfo" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="20.0" top="5.0" />
+                                 </padding>
+                              </HBox>
+   </children>
+</AnchorPane>

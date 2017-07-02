@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tolmar.inventory.app.tolmarinventoryapplication.HistoryController">
+   <children>
+      <VBox prefHeight="700.0" prefWidth="1200.0">
+         <children>
+            <TableView fx:id="historyTable" minHeight="620.0" prefHeight="659.0" prefWidth="1200.0">
+               <columns>
+                  <TableColumn fx:id="listCol" prefWidth="50.0" text="List" />
+                  <TableColumn fx:id="dateCol" prefWidth="100.0" text="Date" />
+                  <TableColumn fx:id="timeCol" prefWidth="95.0" text="Time" />
+                  <TableColumn fx:id="usernameCol" prefWidth="148.0" text="Username" />
+                  <TableColumn fx:id="eventCol" prefWidth="805.0" text="Event" />
+               </columns>
+            </TableView>
+            <Pagination fx:id="pagination" prefWidth="1200.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

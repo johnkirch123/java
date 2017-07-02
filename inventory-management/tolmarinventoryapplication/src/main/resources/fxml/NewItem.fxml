@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tolmar.inventory.app.tolmarinventoryapplication.NewItemController">
+   <children>
+      <VBox layoutX="378.0" layoutY="96.0" prefHeight="610.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="378.0" prefWidth="1200.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label text="Department:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="databaseChoiceBox" prefWidth="150.0">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </ChoiceBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <ImageView fx:id="imageView" fitHeight="250.0" fitWidth="250.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#selectImageClicked" text="Select Image">
+                           <VBox.margin>
+                              <Insets left="100.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="335.0" prefWidth="14.0" />
+                  <VBox prefHeight="335.0" prefWidth="434.0" spacing="40.0">
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label minWidth="150.0" text="Manufacturer Name:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="manufacturerNameTxt" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label minWidth="150.0" text="Model Number:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="modelNumberTxt" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label minWidth="150.0" text="Vendor Name:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="vendorNameTxt" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label minWidth="150.0" text="Vendor Part Number:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="vendorPartNumberTxt" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label minWidth="150.0" text="Tolmar Part Number:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="tolmarPartNumberTxt" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" top="30.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <VBox prefHeight="335.0" prefWidth="434.0" spacing="40.0">
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label minWidth="150.0" text="Location:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="locationTxt">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label minWidth="150.0" text="Description:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="descriptionTxt" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label minWidth="150.0" text="Equipment Group:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="equipmentGroupTxt" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label minWidth="150.0" text="Equipment ID:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="equipmentIDTxt" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label minWidth="150.0" text="Price:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="priceTxt" text="0" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="30.0" top="30.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <Separator prefHeight="8.0" prefWidth="1200.0" />
+            <HBox prefHeight="269.0" prefWidth="516.0">
+               <children>
+                  <VBox prefHeight="269.0" prefWidth="860.0">
+                     <children>
+                        <Label text="Additional Notes:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="additionalNotesTxt" maxWidth="830.0" prefHeight="200.0" prefWidth="300.0" wrapText="true" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <VBox prefHeight="250.0" prefWidth="320.0" spacing="20.0">
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label minWidth="150.0" text="Min:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="minTxt" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label minWidth="150.0" text="Max:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="maxTxt" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label minWidth="150.0" text="Quantity:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="quantityTxt" promptText="0" text="0" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Button fx:id="saveItemBtn" minWidth="75.0" mnemonicParsing="false" onAction="#saveNewItemClicked" text="Save">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="updateItemBtn" minWidth="75.0" mnemonicParsing="false" onAction="#updateItemClicked" text="Update">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="cancelBtn" minWidth="75.0" mnemonicParsing="false" onAction="#cancelClicked" text="Cancel">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label fx:id="saveStatusLbl">
+                           <VBox.margin>
+                              <Insets left="130.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

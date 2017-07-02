@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="imageDirectory" minHeight="300.0" minWidth="500.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tolmar.inventory.app.tolmarinventoryapplication.ImageDirectoryController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="124.0" layoutY="33.0" prefHeight="26.0" prefWidth="253.0" text="Your current image files are stored in:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="imageDirLbl" alignment="CENTER" layoutX="93.0" layoutY="59.0" prefHeight="26.0" prefWidth="315.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="140.0" layoutY="93.0" prefHeight="25.0" prefWidth="222.0" text="Backup Location:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="backupLbl" alignment="CENTER" layoutX="140.0" layoutY="118.0" prefHeight="27.0" prefWidth="222.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="imageDirPathTxtField" layoutX="100.0" layoutY="188.0" prefHeight="25.0" prefWidth="300.0" promptText="K:\ append \" />
+      <Label alignment="CENTER" layoutX="86.0" layoutY="150.0" prefHeight="26.0" prefWidth="329.0" text="Where would you like to store your images?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="setLocationButton" layoutX="124.0" layoutY="238.0" mnemonicParsing="false" onAction="#setLocationButtonClicked" prefWidth="90.0" text="Set Location" />
+      <Button fx:id="backupButton" layoutX="287.0" layoutY="238.0" mnemonicParsing="false" onAction="#backupButtonClicked" prefWidth="90.0" text="Backup" />
+      <CheckBox fx:id="autoSaveCB" layoutX="408.0" layoutY="242.0" mnemonicParsing="false" onAction="#autoSave" text="Auto Save" />
+   </children>
+</AnchorPane>

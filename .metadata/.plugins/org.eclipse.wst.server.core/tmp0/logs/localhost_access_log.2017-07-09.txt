@@ -12,3 +12,11 @@
 0:0:0:0:0:0:0:1 - - [09/Jul/2017:18:52:39 -0600] "GET /HTML_Forms/student-response.jsp?firstName=John&lastName=Kirch&country=Germany HTTP/1.1" 200 183
 0:0:0:0:0:0:0:1 - - [09/Jul/2017:18:54:35 -0600] "GET /HTML_Forms/student-form.html HTTP/1.1" 200 613
 0:0:0:0:0:0:0:1 - - [09/Jul/2017:18:54:46 -0600] "GET /HTML_Forms/student-response.jsp?firstName=Bob&lastName=Dole&country=United+States HTTP/1.1" 200 187
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:20:49:03 -0600] "GET /HTML_Forms/student-form.html HTTP/1.1" 200 915
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:20:49:26 -0600] "GET /HTML_Forms/student-response.jsp?firstName=Billy&lastName=Bob&country=Finland&favoriteLanguage=Java HTTP/1.1" 200 224
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:21:00:16 -0600] "GET /JSP_Demo/homepage.jsp HTTP/1.1" 200 466
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:21:06:24 -0600] "GET /HTML_Forms/student-form.html HTTP/1.1" 200 1229
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:21:06:55 -0600] "GET /HTML_Forms/student-response.jsp?firstName=John&lastName=Kirch&country=Germany&favoriteLanguage=Java HTTP/1.1" 200 225
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:21:07:04 -0600] "GET /HTML_Forms/student-response.jsp?firstName=John&lastName=Kirch&country=Germany&favoriteLanguage=Java&favoriteLanguages=Java&favoriteLanguages=PHP HTTP/1.1" 200 225
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:21:11:06 -0600] "GET /HTML_Forms/student-response.jsp?firstName=John&lastName=Kirch&country=Germany&favoriteLanguage=Java&favoriteLanguages=Java&favoriteLanguages=PHP HTTP/1.1" 200 304
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:21:12:23 -0600] "GET /HTML_Forms/student-response.jsp?firstName=John&lastName=Kirch&country=Germany&favoriteLanguage=Java&favoriteLanguages=Java&favoriteLanguages=PHP HTTP/1.1" 200 320

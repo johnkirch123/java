@@ -7,14 +7,11 @@
 <title>Home Page</title>
 </head>
 <body>
-	<jsp:include page="my-header.html" />
-	
-	Blah ... Blah ... Blah ...
-	<br><br>
-	Blah ... Blah ... Blah ...
-	<br><br>
-	Blah ... Blah ... Blah ...
-	<br><br>
-	
-	<jsp:include page="my-footer.jsp" />
+<jsp:include page="my-header.html" />
+
+Blah ... Blah ... Blah ...<br><br>
+Blah ... Blah ... Blah ...<br><br>
+Blah ... Blah ... Blah ...<br><br>
+
+<jsp:include page="my-footer.jsp" />
 </html>

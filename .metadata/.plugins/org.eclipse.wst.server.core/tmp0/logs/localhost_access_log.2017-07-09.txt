@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:18:33:36 -0600] "GET /JSP_Demo/homepage.jsp HTTP/1.1" 200 482
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:18:33:38 -0600] "GET /JSP_Demo/homepage.jsp HTTP/1.1" 200 482
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:18:33:41 -0600] "GET /JSP_Demo/homepage.jsp HTTP/1.1" 200 482
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:18:37:40 -0600] "GET /JSP_Demo/homepage.jsp HTTP/1.1" 200 466

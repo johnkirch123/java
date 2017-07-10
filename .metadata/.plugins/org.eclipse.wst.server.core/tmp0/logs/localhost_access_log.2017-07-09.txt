@@ -2,3 +2,13 @@
 0:0:0:0:0:0:0:1 - - [09/Jul/2017:18:33:38 -0600] "GET /JSP_Demo/homepage.jsp HTTP/1.1" 200 482
 0:0:0:0:0:0:0:1 - - [09/Jul/2017:18:33:41 -0600] "GET /JSP_Demo/homepage.jsp HTTP/1.1" 200 482
 0:0:0:0:0:0:0:1 - - [09/Jul/2017:18:37:40 -0600] "GET /JSP_Demo/homepage.jsp HTTP/1.1" 200 466
+127.0.0.1 - - [09/Jul/2017:18:48:47 -0600] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:18:48:47 -0600] "GET /HTML_Forms/student-form.html HTTP/1.1" 200 318
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:18:48:53 -0600] "GET /HTML_Forms/student-response.jsp?firstName=John&lastName=Kirch HTTP/1.1" 200 135
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:18:50:58 -0600] "GET /HTML_Forms/student-response.jsp?firstName=John&lastName=Kirch HTTP/1.1" 200 135
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:18:50:59 -0600] "GET /HTML_Forms/student-response.jsp?firstName=John&lastName=Kirch HTTP/1.1" 200 135
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:18:51:02 -0600] "GET /HTML_Forms/student-form.html HTTP/1.1" 200 478
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:18:52:30 -0600] "GET /HTML_Forms/student-form.html HTTP/1.1" 200 489
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:18:52:39 -0600] "GET /HTML_Forms/student-response.jsp?firstName=John&lastName=Kirch&country=Germany HTTP/1.1" 200 183
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:18:54:35 -0600] "GET /HTML_Forms/student-form.html HTTP/1.1" 200 613
+0:0:0:0:0:0:0:1 - - [09/Jul/2017:18:54:46 -0600] "GET /HTML_Forms/student-response.jsp?firstName=Bob&lastName=Dole&country=United+States HTTP/1.1" 200 187

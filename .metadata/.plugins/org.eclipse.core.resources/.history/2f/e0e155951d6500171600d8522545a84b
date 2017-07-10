@@ -11,16 +11,14 @@
 	The students favorite langauge is: ${param.favoriteLanguage}
 	<br>
 	The students favorite langauges are: 
-	<ul>
-		<%
-			String[] langs = request.getParameterValues("favoriteLanguages");
-		
-			for (String tempLang : langs) {
-				out.println("<li>" + tempLang + "</li>");
-			}
-		
-		%>
-	</ul>
+	<%
+		String[] langs = request.getParameterValues("favoriteLanguages");
+	
+		for (String tempLang : langs) {
+			out.println("<li>" + tempLang + "</li>");
+		}
+	
+	%>
 
 </body>
 </html>

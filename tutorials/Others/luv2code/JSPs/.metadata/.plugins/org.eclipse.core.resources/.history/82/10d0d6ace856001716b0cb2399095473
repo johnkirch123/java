@@ -1,0 +1,9 @@
+<html>
+
+<body>
+
+Let's have some fun: <%= com.luv2code.jsp.FunUtils.makeItLowwer("FUN FUN FUN") %>
+
+</body>
+
+</html>

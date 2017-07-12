@@ -1,0 +1,9 @@
+127.0.0.1 - - [20/Jun/2017:22:57:44 -0600] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [20/Jun/2017:22:57:45 -0600] "GET /jspdemo/HelloWorld.jsp HTTP/1.1" 200 279
+0:0:0:0:0:0:0:1 - - [20/Jun/2017:22:59:03 -0600] "GET /jspdemo/HelloWorld.jsp HTTP/1.1" 200 279
+0:0:0:0:0:0:0:1 - - [20/Jun/2017:23:02:40 -0600] "GET /jspdemo/HelloWorld.jsp HTTP/1.1" 200 279
+0:0:0:0:0:0:0:1 - - [20/Jun/2017:23:02:45 -0600] "GET /jspdemo/HelloWorld.jsp HTTP/1.1" 200 279
+0:0:0:0:0:0:0:1 - - [20/Jun/2017:23:07:58 -0600] "GET /jspdemo/HelloWorld.jsp HTTP/1.1" 200 381
+0:0:0:0:0:0:0:1 - - [20/Jun/2017:23:09:00 -0600] "GET /jspdemo/HelloWorld.jsp HTTP/1.1" 200 456
+0:0:0:0:0:0:0:1 - - [20/Jun/2017:23:11:49 -0600] "GET /jspdemo/scriptlet-test.jsp HTTP/1.1" 200 204
+0:0:0:0:0:0:0:1 - - [20/Jun/2017:23:12:03 -0600] "GET /jspdemo/HelloWorld.jsp HTTP/1.1" 200 456

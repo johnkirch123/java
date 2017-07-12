@@ -1,0 +1,5 @@
+INDEX VERSION 1.130+C:\Users\Johnny\Desktop\Programs and Testing\tutorials\Others\luv2code\JSPs\.metadata\.plugins\org.eclipse.jdt.core
+727780274.index
+1237034923.index
+3406804311.index
+2318349534.index

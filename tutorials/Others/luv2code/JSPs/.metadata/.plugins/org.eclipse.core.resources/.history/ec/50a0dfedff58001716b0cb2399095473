@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student Form</title>
+</head>
+<body>
+	<form action="JSPFormTest.jsp">
+		First name: <input type="text" name="firstName" />
+		<br><br>
+		Last name: <input type="text" name="lastName" />
+		<br><br>
+		<select name="country">
+		
+			<option>Brazil</option>
+			<option>France</option>
+			<option>Germany</option>
+			<option>India</option>
+		
+		</select>
+		<br><br>
+		<input type="submit" value="Submit" />
+	</form>
+</body>
+</html>

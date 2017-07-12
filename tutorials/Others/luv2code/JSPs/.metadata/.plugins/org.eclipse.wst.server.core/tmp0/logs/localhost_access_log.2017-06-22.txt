@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [22/Jun/2017:00:31:29 -0600] "GET /jspdemo/homepage.jsp HTTP/1.1" 200 257
+0:0:0:0:0:0:0:1 - - [22/Jun/2017:00:31:37 -0600] "GET /jspdemo/homepage.jsp HTTP/1.1" 200 257

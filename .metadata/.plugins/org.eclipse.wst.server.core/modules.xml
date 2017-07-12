@@ -4,4 +4,5 @@
   <module moduleId="org.eclipse.jst.jee.server:HTML Forms" serverId="Tomcat v8.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Sessions and Cookies" serverId="Tomcat v8.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Cookies" serverId="Tomcat v8.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:JSP Standard Tag Library" serverId="Tomcat v8.0 Server at localhost"/>
 </modules>

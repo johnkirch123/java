@@ -8,3 +8,7 @@
 0:0:0:0:0:0:0:1 - - [11/Jul/2017:22:45:28 -0600] "GET /Cookies/cookies-personalize-response.jsp?favoriteLanguage=C%23 HTTP/1.1" 200 394
 0:0:0:0:0:0:0:1 - - [11/Jul/2017:22:45:30 -0600] "GET /Cookies/cookies-homepage.jsp HTTP/1.1" 200 763
 0:0:0:0:0:0:0:1 - - [11/Jul/2017:22:45:40 -0600] "GET /Cookies/cookies-homepage.jsp HTTP/1.1" 200 763
+127.0.0.1 - - [11/Jul/2017:23:36:48 -0600] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [11/Jul/2017:23:36:48 -0600] "GET /JSP_Standard_Tag_Library/test.jsp HTTP/1.1" 500 2950
+0:0:0:0:0:0:0:1 - - [11/Jul/2017:23:37:19 -0600] "GET /JSP_Standard_Tag_Library/test.jsp HTTP/1.1" 200 312
+0:0:0:0:0:0:0:1 - - [11/Jul/2017:23:47:24 -0600] "GET /JSP_Standard_Tag_Library/foreach-simple-test.jsp HTTP/1.1" 200 181

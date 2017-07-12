@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servers>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v8.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v8.0 Server at localhost" name="Tomcat v8.0 Server at localhost" runtime-id="Apache Tomcat v8.0" server-type="org.eclipse.jst.server.tomcat.80" server-type-id="org.eclipse.jst.server.tomcat.80" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="3">
-    <list key="modules" value0="JSP Demo::org.eclipse.jst.jee.server:JSP Demo::jst.web::3.1" value1="HTML Forms::org.eclipse.jst.jee.server:HTML Forms::jst.web::3.1" value2="Sessions and Cookies::org.eclipse.jst.jee.server:Sessions and Cookies::jst.web::3.1"/>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v8.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v8.0 Server at localhost" name="Tomcat v8.0 Server at localhost" runtime-id="Apache Tomcat v8.0" server-type="org.eclipse.jst.server.tomcat.80" server-type-id="org.eclipse.jst.server.tomcat.80" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="5">
+    <list key="modules" value0="JSP Demo::org.eclipse.jst.jee.server:JSP Demo::jst.web::3.1" value1="HTML Forms::org.eclipse.jst.jee.server:HTML Forms::jst.web::3.1" value2="Sessions::org.eclipse.jst.jee.server:Sessions::jst.web::3.1" value3="Cookies::org.eclipse.jst.jee.server:Cookies::jst.web::3.1"/>
   </server>
 </servers>

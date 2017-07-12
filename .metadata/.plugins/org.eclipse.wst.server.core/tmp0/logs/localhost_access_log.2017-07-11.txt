@@ -1,0 +1,10 @@
+127.0.0.1 - - [11/Jul/2017:22:31:47 -0600] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [11/Jul/2017:22:31:47 -0600] "GET /Cookies/cookies-personalize-form.html HTTP/1.1" 200 440
+0:0:0:0:0:0:0:1 - - [11/Jul/2017:22:31:50 -0600] "GET /Cookies/cookies-personalize-response.jsp?favoriteLanguage=PHP HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [11/Jul/2017:22:42:29 -0600] "GET /Cookies/cookies-homepage.jsp HTTP/1.1" 200 344
+0:0:0:0:0:0:0:1 - - [11/Jul/2017:22:44:29 -0600] "GET /Cookies/cookies-homepage.jsp HTTP/1.1" 200 702
+0:0:0:0:0:0:0:1 - - [11/Jul/2017:22:45:21 -0600] "GET /Cookies/cookies-homepage.jsp HTTP/1.1" 200 766
+0:0:0:0:0:0:0:1 - - [11/Jul/2017:22:45:24 -0600] "GET /Cookies/cookies-personalize-form.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Jul/2017:22:45:28 -0600] "GET /Cookies/cookies-personalize-response.jsp?favoriteLanguage=C%23 HTTP/1.1" 200 394
+0:0:0:0:0:0:0:1 - - [11/Jul/2017:22:45:30 -0600] "GET /Cookies/cookies-homepage.jsp HTTP/1.1" 200 763
+0:0:0:0:0:0:0:1 - - [11/Jul/2017:22:45:40 -0600] "GET /Cookies/cookies-homepage.jsp HTTP/1.1" 200 763

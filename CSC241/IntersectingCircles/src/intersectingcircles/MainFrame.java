@@ -17,6 +17,7 @@ import javax.swing.JPanel;
 public class MainFrame extends JFrame{
     
     CirclesPanel circlesPanel = new CirclesPanel();
+    private final JPanel panel;
     Button reDrawButton = new Button("ReDraw");
     // Contstructor for the layout using BorderLayout. Added 2 panels, south has 
     // the redraw button and center has the canvas.
@@ -24,11 +25,11 @@ public class MainFrame extends JFrame{
         
         super(title);
         
-        final JPanel panel = new JPanel();
+        panel = new JPanel();
         panel.setLayout(new BorderLayout());
         panel.add(circlesPanel, BorderLayout.CENTER);
         panel.add(reDrawButton, BorderLayout.SOUTH);
-        this.add(panel);
+        initializePanel();
         
         reDrawButton.addActionListener(new ActionListener() {
             @Override
@@ -36,6 +37,11 @@ public class MainFrame extends JFrame{
                 circlesPanel.repaint();
             }
         });
+    }
+    
+    private void initializePanel() {
+        
+        this.add(panel);
     }
     
 }

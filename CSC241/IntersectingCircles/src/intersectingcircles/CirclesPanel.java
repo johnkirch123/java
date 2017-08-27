@@ -11,13 +11,17 @@ import javax.swing.JPanel;
 public class CirclesPanel extends JPanel{
     
     private static final int NUMBER_OF_CIRCLES = 5;                    // Number of circles to draw on canvas.
-    private Circle[] circlesArray = new Circle[NUMBER_OF_CIRCLES];      // Array that hold each circle object.
+    private final Circle[] circlesArray = new Circle[NUMBER_OF_CIRCLES];      // Array that hold each circle object.
     public Circle circle;                                               // Instatiate a new Circle Object.
     // Constructor that sets the background panel to white.
     public CirclesPanel() {
         
-        setBackground(Color.WHITE);
+        initializePanel();
+    }
+    
+    private void initializePanel() {
         
+        setBackground(Color.WHITE);
     }
     /**
      * Changes the colors of the circles in circlesArray depending on if they intersect another circle.
@@ -40,13 +44,15 @@ public class CirclesPanel extends JPanel{
             y1 = circlesArray[i].getYCoordinate() + circlesArray[i].getRadius();
             
             System.out.println("Circle " + (i + 1));
-            System.out.println("Radius: " + radius1 + " xCoord: " + x1 + " yCoord: " + y1);
+            System.out.println("Radius: " + radius1 + " x1: " + x1 + " y1: " + y1);
+            System.out.println("xCoord: " + circlesArray[i].getXCoordinate() + " yCoord: " + circlesArray[i].getYCoordinate());
             // Iterates through every other circle in the array to compare to circle 1 for intersection.
             for (int j = i + 1; j < circlesArray.length; j++) {
+                
                 // Sets the radius, x and y coordinates, and distance for circle 2.
                 x2 = circlesArray[j].getXCoordinate() + circlesArray[j].getRadius();
                 y2 = circlesArray[j].getYCoordinate() + circlesArray[j].getRadius();
-                distance = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1)*(y2 - y1));
+                distance = (Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1)*(y2 - y1)));
                 radius2 = circlesArray[j].getRadius();
                 System.out.printf(" distance: %.2f", distance);
                 // Checks to see if the circle is inside, outside, or intersecting with circle 1.
@@ -72,6 +78,7 @@ public class CirclesPanel extends JPanel{
         for (int counter = 0; counter < NUMBER_OF_CIRCLES; counter++) {
             
             circle = new Circle(g);
+            System.out.println("Diameter: " + circle.getDiameter());
             circlesArray[counter] = circle;
         }
         // Checks to see if circles intersect or not.

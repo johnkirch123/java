@@ -39,13 +39,11 @@ public class Circle {
     public void setCircleColor(boolean intersect) {
         
         if (intersect) {
+            
             do {
                 
                 color = new Color(random.nextFloat() - 155 < 0 ? 0 : random.nextFloat() - 155, random.nextFloat(), random.nextFloat());
-                
             } while (color == Color.RED);
-            
-            
         } else {
             color = Color.RED;
         }
@@ -69,7 +67,6 @@ public class Circle {
         setCircleColor(intersect);
         g.setColor(color);
         g.drawOval(x, y, radius, radius);
-        
     }
     /**
      * Gets the color of the circle.
@@ -98,6 +95,10 @@ public class Circle {
      */
     public int getRadius() {
         return diameter / 2;
+    }
+    
+    public int getDiameter() {
+        return diameter;
     }
     /**
      * gets the graphics object of the circle.

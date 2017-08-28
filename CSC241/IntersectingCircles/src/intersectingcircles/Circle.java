@@ -96,10 +96,6 @@ public class Circle {
     public int getRadius() {
         return diameter / 2;
     }
-    
-    public int getDiameter() {
-        return diameter;
-    }
     /**
      * gets the graphics object of the circle.
      * @return graphics object of circle.
